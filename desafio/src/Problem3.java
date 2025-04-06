@@ -27,13 +27,13 @@
 
 import java.util.Scanner;
 
-public class Problem2 {
+public class Problem3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int numberOne;
-        int numberTwo;
-        int soma;
+        double numberOne;
+        double numberTwo;
+        double media = 0;
 
         System.out.println("Enter the first number:");
         numberOne = scanner.nextInt();
@@ -41,9 +41,13 @@ public class Problem2 {
         System.out.println("Enter the secound number:");
         numberTwo = scanner.nextInt();
 
-        soma = numberOne + numberTwo;
+        if (numberOne <= 10 && numberTwo <= 10) {
+            media = ((numberOne * 3.5) + (numberTwo * 7.5))/11;
+            System.out.printf("MEDIA = %.5f\n", media);
+        } else {
+            System.out.println("Valores inválidos.");
+        }
 
-        System.out.println("SOMA = " + soma);
         scanner.close();
     }
 }
