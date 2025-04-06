@@ -4,7 +4,7 @@
  * // Abaixo segue um exemplo de código que você pode ou não utilizar
  * import java.util.Scanner;
  *
- *  public class Problem {
+ *  public class Problem1 {
 	    public static void main(String[] args) {
 		    Scanner sc = new Scanner(System.in);
 		
@@ -26,7 +26,7 @@
 
 import java.util.Scanner;
 
-public class Problem {
+public class Problem1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
